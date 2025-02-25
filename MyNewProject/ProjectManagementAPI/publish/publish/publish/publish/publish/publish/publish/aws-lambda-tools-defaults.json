@@ -1,0 +1,16 @@
+{
+    "Information": [
+      "This file is used to configure the AWS Lambda deployment options for the .NET project"
+    ],
+    "profile": "default",
+    "region": "eu-central-1",
+    "configuration": "Release",
+    "framework": "net8.0",
+    "function-runtime": "dotnet8",
+    "function-handler": "MyLambdaBackend::MyLambdaBackend.Function::FunctionHandler",
+    "function-memory-size": 512,
+    "function-timeout": 30,
+    "function-name": "MyLambdaBackend",
+    "package-type": "Zip"
+  }
+  

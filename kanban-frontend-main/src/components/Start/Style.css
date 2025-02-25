@@ -1,0 +1,236 @@
+/* Resetowanie marginesów i ustawienie domyślnej czcionki */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Kontener główny aplikacji */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Nagłówek */
+.header {
+  background-color: #61dafb;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header .button-group a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.header .button-group a:hover {
+  color: #f0f0f0;
+}
+
+.header button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.header button:hover {
+  background-color: #4cc3ed;
+  transform: translateY(-3px);
+}
+
+.project-overview {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-overview .project-description {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+.project-description {
+  font-size: 20px;
+  line-height: 1.8;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #333;
+  text-align: center;
+}
+
+.project-overview .bordered-box {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 3px solid #61dafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-overview .project-image {
+  width: 100%;
+  height: auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 30px; 
+  padding: 50px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-items: stretch;
+}
+
+/* Kafelki */
+.feature-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #61dafb;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* FAQ */
+.faq-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background: #ffffff;
+  border: 1px solid #61dafb;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 6px;
+  position: relative;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.faq-question:hover {
+  background-color: #f1faff;
+  transform: translateY(-2px);
+}
+
+.faq-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #61dafb;
+  transition: transform 0.3s;
+}
+
+.faq-icon.expanded {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-answer {
+  margin: 15px 20px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 15px;
+  margin-top: auto;
+  border-top: 2px solid #61dafb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+}
+
+.social-icons a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #61dafb;
+}
